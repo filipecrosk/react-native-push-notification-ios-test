@@ -24,9 +24,12 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import PushNotificationHandler from './PushNotificationHandler';
+
 const App = () => {
   return (
     <Fragment>
+      <PushNotificationHandler />
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
